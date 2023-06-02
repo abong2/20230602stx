@@ -28,6 +28,14 @@ body{
     letter-spacing: 0;
     word-break: break-all;
 }
+/* 공통클래스 */
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* 레이아웃 */
 .wrap{
     position: relative;
@@ -168,4 +176,36 @@ body{
 .lang-list>li:last-child::after{
     content: none;
 }
-/* 헤더끝 */
+
+/* 비주얼 */
+.visual{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 910px;
+    background: url(../images/img_visual01.png) no-repeat center fixed;
+    background-size: cover;
+    margin-top: 80px;
+}
+.visual-inner{
+    position: relative;
+    display: block;
+    height: 100%;
+    padding-top: 1px;
+}
+.visual-slogan{
+    position: relative;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 245px;
+}
+.visual-slogan::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -45px;
+    width: 60px;
+    height: 5px;
+    background-color: #ed1c24;
+}
